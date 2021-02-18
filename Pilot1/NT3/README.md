@@ -83,7 +83,7 @@ To train the model from scratch, the script [nt3_baseline_keras2.py](nt3_baselin
     Train on 1120 samples, validate on 280 samples
     ....
     Epoch 44/400
-    1120/1120 [==============================] - 17s 15ms/step - loss: 0.1119 - acc: 0.9723 - val_loss: 0.1305 - val_acc: 0.9821
+    loss: 0.1119 - acc: 0.9723 - val_loss: 0.1305 - val_acc: 0.9821
  
 ```
 

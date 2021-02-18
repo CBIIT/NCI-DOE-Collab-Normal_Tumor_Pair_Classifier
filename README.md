@@ -1,7 +1,7 @@
 # NCI-DOE-Collab-Pilot1-Normal_Tumor_Pair_Classifier
 
 ### Description:
-The Normal Tumor classifider capability (NT3) shows how to train and use a neural network model to classify olecular features (e.g., RNASeq expressions) as either normal or tumor. The RNASeq experssions are provided in Genomics Data Commons (GDC).
+The Normal Tumor classifider capability (NT3) shows how to train and use a neural network model to classify molecular features (e.g., RNASeq expressions) as either normal or tumor. The RNASeq experssions are provided in Genomics Data Commons (GDC).
 
 ### User Community:	
 Researchers interested in cancer susceptibility/histology; classification of diseases for oncology; cancer biology 
