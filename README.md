@@ -19,11 +19,11 @@ Untrained model:
 * Untrained neural network model is defined in nt3.model.json. Also available in yaml format.
 
 Data:
-* Processed training and test data in MoDaC. 
+* Processed training and test data in [MoDaC](https://modac.cancer.gov/searchTab?dme_data_id=NCI-DME-MS01-7372363). 
 
 Trained Model:
 * Trained model is defined by combining the untrained model + model weights.
-* Trained model weights are used in inference nt3.model.h5
+* Trained model weights are used in inference [nt3.weights.h5](https://modac.cancer.gov/searchTab?dme_data_id=NCI-DME-MS01-7372363)
 
 ### Technical Details:
 Please refer to this [README](./Pilot1/NT3/README.md)
