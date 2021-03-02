@@ -8,7 +8,7 @@ The model also acts as a quality control check for synthetically generated gene 
 ## Data
 The model is trained on the balanced 700 matched normal-tumor gene expression profile pairs available from the NCI genomic data commons. 
 The full set of expression features contains 60,483 float columns from RNA-seq [FPKM-UQ](https://docs.gdc.cancer.gov/Encyclopedia/pages/HTSeq-FPKM-UQ/) values. This model achieves around 98% classification accuracy. 
-The associated metadata for the samples (e.g., normal/tumor) can be found [TODO](http://ftp.mcs.anl.gov/pub/candle/public/benchmarks/Pilot1/normal-tumor/matched_normal_samples.metadata.tsv). 
+The associated metadata for the samples (e.g., normal/tumor) can be found in the file [matched_normal_samples.metadata.tsv](https://modac.cancer.gov/searchTab?dme_data_id=NCI-DME-MS01-7372363). 
 
 ### Setup:
 To setup the python environment needed to train and run this model, first make sure you install [conda](https://docs.conda.io/en/latest/) package manager, clone this repository, then create the environment as shown below.
