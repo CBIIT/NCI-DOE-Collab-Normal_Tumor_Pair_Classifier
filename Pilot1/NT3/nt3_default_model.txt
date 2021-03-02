@@ -18,5 +18,5 @@ classes = 2
 pool = [1, 10]
 output_dir = '.'
 trained_model_json = 'nt3.model.json'
-trained_model_h5 = 'nt3.model.h5' 
+trained_model_h5 = 'nt3.weights.h5' 
 timeout = -1

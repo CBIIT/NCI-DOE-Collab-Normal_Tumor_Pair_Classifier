@@ -30,7 +30,7 @@ import nt3 as bmk
 import candle
 
 
-def initialize_parameters(default_model = 'tc1_default_model.txt'):
+def initialize_parameters(default_model = 'nt3_default_model.txt'):
 
     # Build benchmark object
     nt3Bmk = bmk.BenchmarkNT3(bmk.file_path, default_model, 'keras',
@@ -67,8 +67,15 @@ def run(gParameters):
             optimizer=gParameters['optimizer'],
             metrics=[gParameters['metrics']])
 
+
+    url = gParameters['data_url']
+    file_train = gParameters['train_data']
+    file_test = gParameters['test_data']
+    train_file = candle.get_file(file_train, url+file_train, cache_subdir='Pilot1')
+    test_file = candle.get_file(file_test, url+file_test, cache_subdir='Pilot1')
+
     # evaluate json loaded model on test data
-    X_train, Y_train, X_test, Y_test = bmk.load_data(gParameters)
+    X_train, Y_train, X_test, Y_test = bmk.load_data(train_file, test_file, gParameters)
 
     print('X_test shape:', X_test.shape)
     print('Y_test shape:', Y_test.shape)
