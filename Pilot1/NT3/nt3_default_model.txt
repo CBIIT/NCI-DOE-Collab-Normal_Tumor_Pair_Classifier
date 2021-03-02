@@ -1,5 +1,5 @@
 [Global_Params]
-data_url = 'http://ftp.mcs.anl.gov/pub/candle/public/benchmarks/Pilot1/normal-tumor/'
+data_url = 'https://modac.cancer.gov/api/v2/dataObject/NCI_DOE_Archive/JDACS4C/JDACS4C_Pilot_1/normal_tumor_pair_classifier_model_nt3/'
 train_data = 'nt_train2.csv'
 test_data = 'nt_test2.csv'
 model_name = 'nt3'
@@ -17,4 +17,6 @@ dropout = 0.1
 classes = 2
 pool = [1, 10]
 output_dir = '.'
+trained_model_json = 'nt3.model.json'
+trained_model_h5 = 'nt3.model.h5' 
 timeout = -1
