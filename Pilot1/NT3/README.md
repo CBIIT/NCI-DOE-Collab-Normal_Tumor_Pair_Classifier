@@ -29,7 +29,7 @@ To train the model from scratch, the script [nt3_baseline_keras2.py](nt3_baselin
 * Evaluates the best model on the test dataset
 
 ```bash
-   python tc1_baseline_keras2.py
+   python nt3_baseline_keras2.py
    ...
     Loading data...
     done
