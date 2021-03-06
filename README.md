@@ -16,7 +16,7 @@ Using machine learning to classify molecular data has been comonly used. This ca
 ### Components:	
 
 Untrained model: 
-* Untrained neural network model is defined in nt3.model.json. Also available in yaml format.
+* Untrained neural network model is defined in [nt3.model.json](https://modac.cancer.gov/searchTab?dme_data_id=NCI-DME-MS01-7372363). Also available in yaml format.
 
 Data:
 * Processed training and test data in [MoDaC](https://modac.cancer.gov/searchTab?dme_data_id=NCI-DME-MS01-7372363). 
