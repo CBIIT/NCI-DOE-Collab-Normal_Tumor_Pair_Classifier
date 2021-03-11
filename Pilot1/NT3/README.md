@@ -103,9 +103,3 @@ To test the trained model in inference, the script [nt3_infer.py](nt3_infer.py) 
    python nt3_infer.py
 
 ```
-
-``` json Test score: 0.09415323148880686
-    json Test accuracy: 0.982142858845847
-    json acc: 98.21%
-    
-```
