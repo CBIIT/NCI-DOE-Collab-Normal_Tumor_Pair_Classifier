@@ -102,4 +102,14 @@ To test the trained model in inference, the script [nt3_infer.py](nt3_infer.py) 
 ```bash
    python nt3_infer.py
 
+   Loading data...
+   done
+   df_train shape: (1120, 60484)
+   df_test shape: (280, 60484)
+   X_test shape: (280, 60483)
+   Y_test shape: (280, 2)
+   json Test score: 0.09439048415848188
+   json Test accuracy: 0.982142858845847
+   json acc: 98.21%
+
 ```
