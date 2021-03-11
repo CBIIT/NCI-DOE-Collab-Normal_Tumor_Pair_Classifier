@@ -1,14 +1,14 @@
-### Model description:
-The Normal/Tumor classifier capability (NT3) is a 1D convolutional network for classifying RNA-Seq gene expression profiles into normal or tumor tissue categories. The network follows the classic architecture of convolutional models with multiple 1D convolutional layers interleaved with pooling layers, followed by final dense layers. The network can optionally use the following layers:
+### Model Description
+The Normal/Tumor classifier capability (Pilot 1 Benchmark 4), commonly known as NT3, is a 1D convolutional network for classifying RNA-Seq gene expression profiles into normal or tumor tissue categories. The network follows the classic architecture of convolutional models with multiple 1D convolutional layers interleaved with pooling layers, followed by final dense layers. The network can optionally use the following layers:
 * 1D locally-connected layers in place of convolution layers.
 * Dropout layers for regularization.  
 
 It is useful for studying the difference and transformation of latent representation between normal and tumor tissues. The model also acts as a quality control check for synthetically-generated gene expression profiles.
 
-## Data
-The model is trained on the balanced 700 matched normal-tumor gene expression profile pairs available from the Genomic Data Commons (GDC). The full set of expression features contains 60,483 float columns from RNA-Seq [FPKM-UQ](https://docs.gdc.cancer.gov/Encyclopedia/pages/HTSeq-FPKM-UQ/) values. This model achieves around 98% classification accuracy. The associated metadata for the samples (such as normal/tumor) can be found in the file [matched_normal_samples.metadata.tsv](https://modac.cancer.gov/searchTab?dme_data_id=NCI-DME-MS01-7372363). 
+### Data
+The model is trained on the balanced 700 matched normal/tumor gene expression profile pairs available from the Genomic Data Commons (GDC). The full set of expression features contains 60,483 float columns from RNA-Seq [FPKM-UQ](https://docs.gdc.cancer.gov/Encyclopedia/pages/HTSeq-FPKM-UQ/) values. This model achieves around 98% classification accuracy. The associated metadata for the samples (such as normal/tumor) can be found in the file [matched_normal_samples.metadata.tsv](https://modac.cancer.gov/searchTab?dme_data_id=NCI-DME-MS01-7372363). 
 
-### Software Setup:
+### Software Setup
 To set up the Python environment needed to train and run this model:
 1. Install [conda](https://docs.conda.io/en/latest/) package manager.
 2. Clone this repository. 
@@ -24,7 +24,7 @@ To download the processed data needed to train and test the model, and the train
 2. Follow the instructions in the Training section below. 
 3. When prompted by the training and test scripts, enter your MoDac credentials.
 
-### Training:
+### Training
 To train the model from scratch, execute the script [nt3_baseline_keras2.py](nt3_baseline_keras2.py). This script does the following:
 * Reads the model configuration parameters from [nt3_default_model.txt](nt3_default_model.txt).
 * Downloads the training data and splits it to training/validation sets.
@@ -93,7 +93,7 @@ Here is example output from running the script:
  
 ```
 
-### Inference: 
+### Inference
 To test the trained model in inference, execute the script [nt3_infer.py](nt3_infer.py). This script does the following:
 * Downloads the trained model.
 * Downloads the processed test dataset with the corresponding labels.
