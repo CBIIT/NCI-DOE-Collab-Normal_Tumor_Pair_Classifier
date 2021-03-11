@@ -11,7 +11,7 @@ Researchers interested in cancer susceptibility/histology; classification of dis
 A data scientist can train the provided untrained model on their own data or use the trained model to classify the provided test samples. The provided scripts use data that has been downloaded from GDC and normalized.
 
 ### Uniqueness
-Researchers have commonly used machine learning to classify molecular data. This capability shows how you can use neural networks in classification of genomic profiles without downsampling the provided expressions. &#x1F534;_**(Question: I added "Researchers" as a guess to avoid passive voice. If it's not correct, then who commmonly uses it?)**_
+Researchers have commonly used machine learning to classify molecular data. This capability shows how you can use neural networks in classification of genomic profiles without downsampling the provided expressions. 
 
 ### Components
 * Untrained model: 
