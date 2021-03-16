@@ -6,7 +6,7 @@ The Normal/Tumor classifier capability (Pilot 1 Benchmark 4), commonly known as 
 It is useful for studying the difference and transformation of latent representation between normal and tumor tissues. The model also acts as a quality control check for synthetically-generated gene expression profiles.
 
 ### Data
-The model is trained on the balanced 700 matched normal/tumor gene expression profile pairs available from the Genomic Data Commons (GDC). The full set of expression features contains 60,483 float columns from RNA-Seq [FPKM-UQ](https://docs.gdc.cancer.gov/Encyclopedia/pages/HTSeq-FPKM-UQ/) values. This model achieves around 98% classification accuracy. The associated metadata for the samples (such as normal/tumor) can be found in the file [matched_normal_samples.metadata.tsv](https://modac.cancer.gov/searchTab?dme_data_id=NCI-DME-MS01-7372363). 
+The model is trained on the 700 balanced and matched normal/tumor gene expression profile pairs available from the Genomic Data Commons (GDC). The full set of expression features contains 60,483 float columns from RNA-Seq [FPKM-UQ](https://docs.gdc.cancer.gov/Encyclopedia/pages/HTSeq-FPKM-UQ/) values. This model achieves around 98% classification accuracy. The associated metadata for the samples (such as normal/tumor) can be found in the file [matched_normal_samples.metadata.tsv](https://modac.cancer.gov/searchTab?dme_data_id=NCI-DME-MS01-7372363). 
 
 ### Software Setup
 To set up the Python environment needed to train and run this model:
