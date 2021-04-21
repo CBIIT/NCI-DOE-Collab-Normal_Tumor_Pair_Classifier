@@ -1,4 +1,4 @@
-name: mt-cnn
+name: nt3
 channels:
   - defaults
   - conda-forge
